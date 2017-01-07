@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script src="js/loader.js"></script>
+</head>
+	<body>
+		<div id="date"></div>
+		<div class="wrap">
+		<h2>Specsavers memory</h2>
+		<div class="game"></div>
+
+			
+			<div class="modal-overlay">
+				<div class="modal">
+					<button class="restart">Opnieuw spelen?</button>
+				</div>
+			</div>
+		  </div><!-- End Wrap -->
+		<div id="loader-wrapper">
+
+			<div id="loader"></div>
+
+			<div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+
+		</div>
+
+		<script>Library.loader();</script>
+		<script>Library.datum();</script>
+		<script>Library.memory();</script>
+
+	</body>
+</html>
