@@ -1,5 +1,6 @@
 # Specsavers daily memory
-Met deze library voeg je een memory game toe aan je website, deze memory game word vooraf ingeladen doormiddel van een loading screen, verder word ook de datum toegevoegd.
+Met deze library voeg je een memory game toe aan je website, deze memory game word
+ vooraf ingeladen doormiddel van een loading screen, verder word ook de datum toegevoegd.
 
 ## Wat het doet
 Hieronder een opsomming van de functionaliteiten van deze library
@@ -55,11 +56,11 @@ Voeg de volgende drie regels toe aan je header tag:
 ```
 
 ###Wil je afbeeldingen vervangen?
-Wil je liever andere afbeedingen? Ga dan naar de image map en overschijf daar de afbeedlingen in de map images,
-de afbeeldingen van de memory game zijn aan de afbeedling 1.jpg tot 9,jpg, ook kan je het logo aanpassen door
-logo.png te overschrijven.
+Wil je liever andere afbeedingen? Ga dan naar de image map en overschijf daar de afbeedlingen 
+in de map images,de afbeeldingen van de memory game zijn aan de afbeedling 1.jpg tot 9,jpg, 
+ook kan je het logo aanpassen door logo.png te overschrijven.
 
 ## Updates
 Hier een opsomming van zaken die ik later zou kunnen toepassen:
-* laadscherm dat eerst de afbeedlingen checked en dan pas doorlaad.
-* dynamische aantal kaarten voor de memory game.
+* Laadscherm dat eerst de afbeedlingen checked en dan pas doorlaad.
+* Dynamische aantal kaarten voor de memory game.
