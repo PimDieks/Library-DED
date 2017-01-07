@@ -22,7 +22,7 @@ De library kan als volgt geinstalleerd worden in je website.
 
 
 ###Mogelijkheid 2: Handmatig
-Download de library (zip) en pak het zip bestand uit. Plaats de css, image en js map in je root. 
+Download de library (zip) en pak het zip bestand uit. Plaats de css, images en js map in je root. 
 Voeg de onderstaande HTML code toe aan je body tag in je HTML file:
 
 ```html
