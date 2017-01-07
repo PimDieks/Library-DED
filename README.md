@@ -54,6 +54,24 @@ Voeg de volgende drie regels toe aan je header tag:
 	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 	<script src="js/loader.js"></script>
 ```
+###Laadtijd aanpassen?
+ga naar de loader.js in de js map, pas dan bij de library loader het aantal seconde aan, let op 1000 is 1 sec
+
+```html
+	<script>
+	        Library.loader = function(){
+
+            $(document).ready(function() {
+ 
+            setTimeout(function(){
+                $('body').addClass('loaded');
+            }, 3000);//hier pas je het aantal seconde aan.
+         
+        });
+
+        }
+   	</script>
+```
 
 ###Wil je afbeeldingen vervangen?
 Wil je liever andere afbeedingen? Ga dan naar de image map en overschijf daar de afbeedlingen 
