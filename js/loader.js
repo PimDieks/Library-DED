@@ -69,7 +69,7 @@
                 this.$memoryCards.on("click", this.cardClicked);
                 this.$restartButton.on("click", $.proxy(this.reset, this));
             },
-            // kinda messy but hey
+
             cardClicked: function(){
                 var _ = Memory;
                 var $card = $(this);
@@ -119,16 +119,15 @@
                 this.$game.show("slow");
             },
 
-            // Fisher--Yates Algorithm -- http://bost.ocks.org/mike/shuffle/
             shuffle: function(array){
                 var counter = array.length, temp, index;
-            // While there are elements in the array
+
             while (counter > 0) {
-                // Pick a random index
+
                 index = Math.floor(Math.random() * counter);
-                // Decrease counter by 1
+
                 counter--;
-                // And swap the last element with it
+
                 temp = array[counter];
                 array[counter] = array[index];
                 array[index] = temp;

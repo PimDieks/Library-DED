@@ -1,4 +1,4 @@
-# Specsavers daily memory
+# Daily memory
 Met deze library voeg je een memory game toe aan je website, deze memory game word
  vooraf ingeladen doormiddel van een loading screen, verder word ook de datum toegevoegd.
 
