@@ -1,11 +1,3 @@
-/*loader*/
-
-p {
-    line-height: 1.33em;
-    font-size: 1.4vw;
-    color: white;
-}
-
 #loader-wrapper {
     position: fixed;
     top: 0;
@@ -19,25 +11,33 @@ p {
     position: relative;
     left: 50%;
     top: 50%;
-    width: 400px;
-    height: 300px;
-    margin: -200px 0 0 -150px;
-    background-image: url("../images/logo.png");
+    width: 200px;
+    height: 200px;
+    margin: -100px 0 0 -100px;
+    background-image: url("../images/loading.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
 
-    -webkit-animation: spin 6s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
-    animation: spin 6s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+    -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+    animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
 
     z-index: 1001;
 }
 
 #date {
-    font-size: 60px;
+    font-size: 40px;
     color: #222222;
     font-weight: bold;
     text-align: center;
     margin: 2%;
+}
+
+#rekenmachine {
+
+  margin-left: 30%;
+  margin-right: 30%
+  width:40%;
+
 }
 
 
@@ -142,6 +142,11 @@ p {
   font-family: 'brandico', sans-serif;
 }
 
+p {
+    color: black;
+    font-family: 'brandico', sans-serif;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -155,12 +160,22 @@ html, body {
 
 body {
   min-height: 100%;
-  font-family: "Arial", sans-serif;
+  font-family: 'brandico', sans-serif;
 }
 
 h2 {
 
-    text-align: center;
+  font-size: 40px;
+  font-family: 'brandico', sans-serif;
+  margin-bottom: -20px;
+
+}
+
+h3 {
+
+  font-size: 40px;
+  font-family: 'brandico', sans-serif;
+
 }
 
 .wrap {

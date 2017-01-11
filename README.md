@@ -1,12 +1,12 @@
-# Daily memory
-Met deze library voeg je een memory game toe aan je website, deze memory game word
- vooraf ingeladen doormiddel van een loading screen, verder word ook de datum toegevoegd.
+# Rekenmachine met laoding scherm en datum weergaven
+Met deze library voeg je een laoding scherm en datum weergave en een simple reken machine toe
+aan je website
 
 ## Wat het doet
 Hieronder een opsomming van de functionaliteiten van deze library
 * Maak een loading screen aan
 * Geeft constant de juiste datum weer.
-* Memory game met aanpasbare afbeeldingen, door de afbeedingen te vervangen in de image map.
+* Rekenmachine voor optellen, aftrekken, delen en vermenigvuldigen
 
 ## Demo
 URL naar [demo](http://athena.fhict.nl/users/i318346/LibraryDED/index.html).
@@ -26,25 +26,38 @@ Download de library (zip) en pak het zip bestand uit. Plaats de css, images en j
 Voeg de onderstaande HTML code toe aan je body tag in je HTML file:
 
 ```html
+		<body>
 		<div id="date"></div>
-		<div class="wrap">
-		<h2>Specsavers memory</h2>
-		<div class="game"></div>
-			<div class="modal-overlay">
-				<div class="modal">
-					<button class="restart">Opnieuw spelen?</button>
-				</div>
-			</div>
-		  </div>
+		<div id="rekenmachine">
+			<h2>Rekenmachine</h2><br>
+			<br>
+			<textarea id="nummer1"></textarea>
+			<textarea id="nummer2"></textarea>
+
+			<br>
+			<br>
+
+			<button id="tel" type="button" onclick="optellen()">Optellen</button>
+			<button id="min" type="button" onclick="aftrekken()">Aftrekken</button>
+			<button id="deel" type="button" onclick="delen()">delen</button>
+			<button id="keer" type="button" onclick="vermenigvuldigen()">vermenigvuldigen</button>
+		
+			<h3 id="uitkomst"></h3>
+		</div>
 		<div id="loader-wrapper">
+
 			<div id="loader"></div>
+
 			<div class="loader-section section-left"></div>
             <div class="loader-section section-right"></div>
+
 		</div>
+
 		<script>Library.loader();</script>
 		<script>Library.datum();</script>
-		<script>Library.memory();</script>
+		<script>Library.rekenen();</script>
 
+	</body>	
 ```
 
 Voeg de volgende drie regels toe aan je header tag:
@@ -65,7 +78,7 @@ ga naar de loader.js in de js map, pas dan bij de library loader het aantal seco
  
             setTimeout(function(){
                 $('body').addClass('loaded');
-            }, 3000);//hier pas je het aantal seconde aan.
+            }, 1000);//hier pas je het aantal seconde aan.
          
         });
 
@@ -73,12 +86,10 @@ ga naar de loader.js in de js map, pas dan bij de library loader het aantal seco
    	</script>
 ```
 
-###Wil je afbeeldingen vervangen?
-Wil je liever andere afbeedingen? Ga dan naar de image map en overschijf daar de afbeedlingen 
-in de map images,de afbeeldingen van de memory game zijn aan de afbeedling 1.jpg tot 9,jpg, 
-ook kan je het logo aanpassen door logo.png te overschrijven.
+###Afbeelding loading screen vervangen?
 
-## Updates
+Je kan het logo aanpassen door loading.png te overschrijven.
+
+##Updates
 Hier een opsomming van zaken die ik later zou kunnen toepassen:
-* Laadscherm dat eerst de afbeedlingen checked en dan pas doorlaad.
-* Dynamische aantal kaarten voor de memory game.
+volledige rekenmachine porgrammeren met mooie grafische weergave

@@ -8,17 +8,22 @@
 </head>
 	<body>
 		<div id="date"></div>
-		<div class="wrap">
-		<h2>Specsavers memory</h2>
-		<div class="game"></div>
+		<div id="rekenmachine">
+			<h2>Rekenmachine</h2><br>
+			<br>
+			<textarea id="nummer1"></textarea>
+			<textarea id="nummer2"></textarea>
 
-			
-			<div class="modal-overlay">
-				<div class="modal">
-					<button class="restart">Opnieuw spelen?</button>
-				</div>
-			</div>
-		  </div><!-- End Wrap -->
+			<br>
+			<br>
+
+			<button id="tel" type="button" onclick="optellen()">Optellen</button>
+			<button id="min" type="button" onclick="aftrekken()">Aftrekken</button>
+			<button id="deel" type="button" onclick="delen()">delen</button>
+			<button id="keer" type="button" onclick="vermenigvuldigen()">vermenigvuldigen</button>
+		
+			<h3 id="uitkomst"></h3>
+		</div>
 		<div id="loader-wrapper">
 
 			<div id="loader"></div>
@@ -30,7 +35,7 @@
 
 		<script>Library.loader();</script>
 		<script>Library.datum();</script>
-		<script>Library.memory();</script>
+		<script>Library.rekenen();</script>
 
 	</body>
 </html>
